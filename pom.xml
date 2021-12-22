@@ -87,6 +87,18 @@
 					<target>8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>2.10.0</version>
+				<configuration>
+					<reportVersion>2.13.2</reportVersion>
+<!--					<configuration>-->
+<!--						<reportVersion>2.10.0</reportVersion>-->
+<!--						<reportDirectory>allure-report/</reportDirectory>-->
+<!--					</configuration>-->
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
