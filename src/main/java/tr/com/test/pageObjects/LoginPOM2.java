@@ -14,7 +14,7 @@ public class LoginPOM2 extends TestBase {
 //        chromeOptions.addArguments("--headless");
 //        driver = new ChromeDriver(chromeOptions);
 
-        System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("http://automationpractice.com/");
