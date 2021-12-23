@@ -1,0 +1,1 @@
+{"uuid":"3e6bb249-21c2-42fa-8dc7-b10f8a1af3b1","name":"Regression Test Set","children":["1044011d-e0a7-4cc4-82c4-f92acca451fc"],"befores":[],"afters":[{"name":"testSonrasi","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1640249811367,"stop":1640249811435}],"links":[],"start":1640249787235,"stop":1640249811436}

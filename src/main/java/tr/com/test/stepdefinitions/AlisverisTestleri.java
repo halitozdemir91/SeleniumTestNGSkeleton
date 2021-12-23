@@ -1,6 +1,7 @@
 package tr.com.test.stepdefinitions;
 
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -29,18 +30,23 @@ public class AlisverisTestleri extends TestBase {
 
     }
 
-    @Parameters({"isim","soyisim"})
+    @Parameters({"isim","soyisim","email"})
     @Test
-    public void dogruTest(@Optional("metehan") String isim, @Optional("kara") String soyisim) {
+    public void dogruTest(@Optional("metehan") String isim, @Optional("kara") String soyisim, @Optional("halo@hvnet.com.tr") String email) {
 
         loginPOM2= new LoginPOM2();
         loginPOM2.webSitesiAc();
         HomePagePOM homePagePOM = new HomePagePOM(driver,waitTime);
-        homePagePOM.girisYap("agunaydin@oyak.com.tr");
+        homePagePOM.girisYap(email);
         AccountPOM accountPOM = new AccountPOM(driver,waitTime);
         accountPOM.hesapBilgileriniDoldur(isim, soyisim);
-
-
+        accountPOM.goSummerDress();
+        accountPOM.sepeteEkle();
+        accountPOM.odeme();
+    }
+    @AfterTest
+    public void testSonrasi(){
+        driver.close();
     }
 
 

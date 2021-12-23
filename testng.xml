@@ -2,12 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Automation">
     <test name="Regression Test Set">
+        <parameter name="email" value="test12353@hvnet.com.tr"></parameter>
         <parameter name="isim" value="sule"/>
         <parameter name="soyisim" value="ates"/>
+
         <classes>
             <class name="tr.com.test.stepdefinitions.AlisverisTestleri">
                 <methods>
                     <include name="dogruTest"/>
+<!--                    <include name="testSonrasi"/>-->
                 </methods>
             </class>
         </classes>

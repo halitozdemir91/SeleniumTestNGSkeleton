@@ -10,7 +10,7 @@ public class LoginPOM2 extends TestBase {
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--start-maximized");
-        chromeOptions.addArguments("--headless");
+//        chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
         driver.get("http://automationpractice.com/");
 

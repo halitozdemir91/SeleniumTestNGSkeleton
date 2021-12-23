@@ -13,7 +13,8 @@ public class LoginPOM extends TestBase {
 
     public void open_website(String browser){
         if(browser.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/src/test/resources/drivers/chromedriver.exe");
+//            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/src/test/resources/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--disable-notifications");
             chromeOptions.addArguments("--start-maximized");
